@@ -35,3 +35,12 @@ def create_coordinates(df):
     banking_data = banking_data.drop(columns='postal_code')
     print("✅ Coordinates have been created")
     return banking_data
+
+def create_x_y(df):
+    '''
+    Separate features from target
+    '''
+    X = df.drop(["Personal_Loan","Age","longitude"], axis =1)
+    y = df["Personal_Loan"]
+    print("✅ X and y have been created")
+    return X, y
