@@ -23,7 +23,7 @@ def predict_bank_loan(number):
 
     # Predict
     predictions = final_model.predict(X)
-    predictions = [round(prediction, 2) for prediction in predictions]
+    # predictions = [round(prediction, 2) for prediction in predictions]
     print(predictions)
 
 def say_hello():
