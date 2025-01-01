@@ -1,6 +1,9 @@
 # Libraries to import data
 import pandas as pd
 
+# Models
+from xgboost import XGBClassifier
+
 def load_banking_data():
     # Retrieve the data stored locally
     path = "data/raw_data"
