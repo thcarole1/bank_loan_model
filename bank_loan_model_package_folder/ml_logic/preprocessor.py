@@ -40,7 +40,7 @@ def create_x_y(df):
     '''
     Separate features from target
     '''
-    X = df.drop(["Personal_Loan","Age","longitude"], axis =1)
+    X = df.drop(["Personal_Loan","Age"], axis =1)
     y = df["Personal_Loan"]
     print("✅ X and y have been created")
     return X, y

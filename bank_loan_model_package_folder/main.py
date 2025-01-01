@@ -10,7 +10,6 @@ def predict_bank_loan(number):
     # Retrieve banking data
     banking_data = load_banking_data()
     banking_data = rewrite_feature_names(banking_data)
-    banking_data = create_coordinates(banking_data)
 
     # Extract a specific number of rows
     banking_data_sample = banking_data.sample(number)
@@ -23,7 +22,6 @@ def predict_bank_loan(number):
 
     # Predict
     predictions = final_model.predict(X)
-    # predictions = [round(prediction, 2) for prediction in predictions]
     print(predictions)
 
 def say_hello():
